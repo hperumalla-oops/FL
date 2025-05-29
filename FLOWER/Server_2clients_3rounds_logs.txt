@@ -1,4 +1,4 @@
- python .\server.py
+python .\server.py
 WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
 WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
 WARNING:root:Limited tf.compat.v2.summary API due to missing TensorBoard installation.
@@ -76,4 +76,4 @@ INFO flwr 2025-05-29 07:51:39,302 | app.py:221 | app_fit: losses_centralized [(0
 INFO:flwr:app_fit: losses_centralized [(0, 1.6326473951339722), (1, 0.26737600564956665), (2, 0.20384222269058228), (3, 0.180749773979187)]
 INFO flwr 2025-05-29 07:51:39,303 | app.py:222 | app_fit: metrics_centralized {'accuracy': [(0, 0.06514092534780502), (1, 0.9190534949302673), (2, 0.9423507452011108), (3, 0.9444520473480225)]}
 INFO:flwr:app_fit: metrics_centralized {'accuracy': [(0, 0.06514092534780502), (1, 0.9190534949302673), (2, 0.9423507452011108), (3, 0.9444520473480225)]}
-(flwr_tf) PS C:\Users\hperu\OneDrive\Desktop\fl\FLOWER>
+(flwr_tf) PS C:\Users\hperu\OneDrive\Desktop\fl\FLOWER> 
