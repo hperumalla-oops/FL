@@ -48,8 +48,8 @@ class SaveModelStrategy(fl.server.strategy.FedAvg):
 
 strategy = fl.server.strategy.FedAvg(
     fraction_fit=1.0,
-    min_fit_clients=2,
-    min_available_clients=2,
+    min_fit_clients=4,
+    min_available_clients=4,
     on_fit_config_fn=fit_config,
     on_evaluate_config_fn=evaluate_config,
     evaluate_fn=evaluate_fn
