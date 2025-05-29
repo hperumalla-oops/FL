@@ -19,6 +19,8 @@ class ECGClient(fl.client.NumPyClient):
 
         self.model = create_model(input_dim=self.x_train.shape[1])
         self.x_test=x_test
+        print(self.x_train.shape[1])
+
 
         self.y_train=y_train
         self.y_test=y_test
@@ -29,9 +31,8 @@ class ECGClient(fl.client.NumPyClient):
 
     def fit(self, parameters, config):
         self.model.set_weights(parameters)
-        r=self.model.fit(self.x_train, self.y_train, epochs=1, validation_data=(x_test, y_test), batch_size=32, verbose=0)
-        hist=r.history()
-        print("Fit history : " ,hist)
+        history=self.model.fit(self.x_train, self.y_train, epochs=1, validation_data=(x_test, y_test), batch_size=32, verbose=0)
+        print("Fit history : " ,history)
         return self.model.get_weights(), len(self.x_train), {}
 
     def evaluate(self, parameters, config):
